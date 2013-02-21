@@ -1,0 +1,183 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta name="keywords" content="online documentation, web online help, web help" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<meta name="generator" content="chm2web Pro 2.85 (unicode)" />
+<meta name="GENERATOR" content="Microsoft® HTML Help Workshop 4.1">
+<script type="text/javascript" src="js/jquery-1.4.2.min.js">
+</script>
+<script type="text/javascript" src=
+"js/jquery-ui-1.8.5.custom.min.js">
+</script>
+<script type="text/javascript" src="js/calendardateinput.js">
+</script>
+<script type="text/javascript" src="js/helpsystem.js">
+</script>
+<title>Work Flow Action details:. Milestone Search</title>
+<link rel="stylesheet" href="../files/helpindex.css" type=
+"text/css">
+<link rel="stylesheet" href="../default.css" type="text/css">
+
+<script type="text/JavaScript" src="../files/supply.js"></script>
+<script type="text/JavaScript">
+chmtop.c2wtopf.pageid = "help_insupdwfa.htm";
+</script>
+
+</head>
+<body><script type="text/JavaScript"> 
+if (window.name != "content") 
+  document.write(" <table width=\"100%\" bgcolor=\"#e1e1e1\"cellspacing=\"2\" cellpadding=\"0\" style=\"border-collapse: collapse; font-family: sans-serif; font-size: 14px; color: #000000; text-decoration: none;  \"> <tr> <td align=\"center\" style=\"border-bottom: 2px solid gray\" > <br>&nbsp;Click <a href=\"../help_crm_index.html?page=source%2Fhelp_insupdwfa.htm\">here</a> to show toolbars of the Web Online Help System: <a href=\"../help_crm_index.html?page=source%2Fhelp_insupdwfa.htm\">show toolbars</a><br>&nbsp;</td></tr></table><br> "); 
+</script>
+<!-- !chm2web! -->
+
+<a name="TopOfPage" id="TopOfPage"></a>
+<h2>Milestone Search</h2>
+
+<p><b>Version:</b> Version 3.0.0</p>
+
+<p><b>Modified By:</b> June Kang - System Analyst.</p>
+
+<p><b>Date:</b> 21st March 2011</p>
+
+<h3>Insert New / Update Work Flow Action form</h3>
+
+<p>A Work Flow Action form is used to assign an automated task with
+a set duration to a Candidate to aid in the processing of
+Candidates.<br>
+The top section of the form displays candidates details such as
+candidateID, and the bottom section displays the WFA details assign
+to the candidate.<br>
+<br>
+<img src="helpimg_insupdwfa.jpg" width="803" height="480" with=
+"750"><br>
+<br></p>
+
+<h3>How to assign a Work Flow Action to a candidate</h3>
+The process to assign a WFA to a candidate it is easy:
+
+<ul>
+<li>Select the Insert New / Update Work Flow Action bar if you have
+not already clicked.</li>
+
+<li>The field will be auto filled the candidate ID.</li>
+
+<li>Specify the WFAID, the form will retrieve automatically a brief
+description of the WFAID</li>
+
+<li>Specify the Assign Template, the form will retrieve
+automatically the content email of the WFA template associated</li>
+
+<li>The status has to be <em>"Active"</em></li>
+
+<li>Fill all the candidate's WFA details in the form.</li>
+
+<li>Click the <em>"Save"</em> button.</li>
+</ul>
+
+<p>If the validation will not return any error, the candidate's WFA
+details will be inserted in the CRM database</p>
+
+<p><img src="helpimg_insupdwfa.jpg" width="803" height="480" with=
+"750"><br>
+<br>
+<br>
+</p>
+
+<h3>How to change a Work Flow Action assigned to a candidate</h3>
+
+<p>The process to update a candidate's WFA details is:</p>
+
+<ul>
+<li>Select the Insert New / Update Work Flow Action bar if you have
+not already clicked.</li>
+
+<li>All the data will be retrieved from the CRM database.</li>
+
+<li>Change the candidate's WFA details in the form.</li>
+
+<li>Click the <em>"Update"</em> button.</li>
+</ul>
+
+<p>If the validation will not return any error, the candidate's WFA
+details will be updated in the CRM database</p>
+
+<!--<p><img src="helpimg_insupdwfa3.jpg" width="803" height="480" with=
+"750"><br>
+
+<br>
+<br>-->
+</p>
+
+<h3>Submit &amp; Reset Button</h3>
+
+<p>Clicking the <em>"Save"/"Update"</em> button the Insert New /
+Update Candidate form will be submitted to the server, on the other
+hand clicking the "Reset" button all the fields of the Insert New /
+Update Candidate form will be re-set.</p>
+
+<h3>Warning Message</h3>
+
+<p>The Warning messages that you may encounter is when the agent
+doesnt complete the form correctly. See the example below.</p>
+
+<p><img src="helpimg_insupdwfa_warn1.jpg" width="803" height="480"
+with="750"><br>
+<br>
+<br>
+<!--
+<img src="helpimg_insupdwfa_warn2.jpg" width="803" height="480"
+with="750"><br>
+<br>
+<br>
+<img src="helpimg_insupdwfa_warn3.jpg" width="803" height="480"
+with="750"><br>
+<br>
+<br>
+-->
+</p>
+
+<h3>Error Message</h3>
+
+<p>There are few Error messages you may encounter when using this
+form.<br>
+<br>
+Appropriate validation is applied for:<br></p>
+
+<ul>
+<li>Mandatory fields.</li>
+
+<li>Checking if the associated WFA template exist in the
+WFATemplates folder.</li>
+
+<li>Unalble to calculate WFA's duraction date.</li>
+
+<li>Assign an invalid date to theWFA's contacted date field if the
+candidate has been contacted.</li>
+</ul>
+
+<p><br>
+</p>
+
+<script type="text/JavaScript">
+var fe = FindFrame("toc", top);
+if ((fe != null) && (chmtop.c2wtopf.jstree != null)) {
+  if (chmtop.c2wtopf.FITEMS[chmtop.c2wtopf.pagenum] != chmtop.c2wtopf.pageid)
+    chmtop.c2wtopf.jstree.OpenTreeNode("source/" + chmtop.c2wtopf.pageid);
+}
+</script>
+
+<!-- CHM2WEB -->
+<!-- DO NOT DELETE OR MODIFY THIS CODE WITHOUT 
+     WRITTEN PERMISSION OF A!K RESEARCH LABS -->
+<table width="100%" cellspacing="0" cellpadding="0" 
+style="margin-top: 0pt; border-collapse: collapse;"> 
+<tr> <td align="right" style="background-color:white; border-top: 1px solid gray;"> 
+<a href="http://chm2web.aklabs.com" target="_blank" style="font-family: sans-serif;  font-size: 11px; text-decoration: none;"><font color="gray">Converted from CHM to HTML with <b>chm2web Pro 2.85 (unicode)</b></font></a>
+</td></tr></table> 
+<!-- /CHM2WEB -->
+
+</body>
+</html>

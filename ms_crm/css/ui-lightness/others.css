@@ -1,0 +1,103 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+
+		/*Tommy -- CSS Will FIX IT*/
+		body{ font: 62.5% "Trebuchet MS", sans-serif; margin: 0px;}
+			
+			.suggestionsBox {
+				font-family: Arial, Helvetica, sans-serif;
+				font-size: 11px;
+				color: #666;
+				position: relative;
+				margin: -15px 30px 0px 0px;
+				width: 210px;
+				-moz-border-radius: 0px;
+				-webkit-border-radius: 0px;
+				filter:alpha(opacity=90);
+				opacity:0.9;
+			}
+			
+			.suggestionsBoxTom {
+				font-family: Arial, Helvetica, sans-serif;
+				font-size: 11px;
+				color: #666;
+				position: relative;
+				width: 210px;
+				-moz-border-radius: 0px;
+				-webkit-border-radius: 0px;
+				filter:alpha(opacity=90);
+				opacity:0.9;
+				display:none;
+			}
+				
+			.suggestionList {
+					margin: 0px;
+					padding: 0px;
+					background-color:#FFF;
+			}
+				
+			.suggestionList li {
+					margin: 0px 0px 3px 0px;
+					padding: 3px;
+					cursor: pointer;
+
+			}
+				
+			.suggestionList li:hover {
+					background-color: #659CD8;
+			}
+			
+			
+			#suggestionDivTom {
+			position:absolute;
+			left:5px;
+			top:221px;
+			width:92px;
+			height:1px;
+			z-index:3;
+			}
+			
+			#candidateSummaryDiv {
+			position:absolute;
+			left:5px;
+			top:221px;
+			width:150px;
+			height:100px;
+			z-index:3;
+			display:none;
+			}
+			
+			#candidateSummaryContent {
+			width:140px; 
+			float:left; 
+			background-color:#FC0;
+			filter:alpha(opacity=90);
+			opacity:0.9; 
+			}
+			
+			#helpDivTom {
+			position:absolute;
+			left:5px;
+			top:221px;
+			width:150px;
+			height:100px;
+			z-index:3;
+			display:none;
+			}
+			
+			#helpDivTomHeader{
+				width:140px; 
+				height:17px; 
+				background-color:#F90;
+				color:#F90;
+				filter:alpha(opacity=90);
+				opacity:0.9; color:#FFF;
+			}
+			#helpDivTomContent{
+				width:140px; 
+				background-color:#E6E6E6;
+				filter:alpha(opacity=90);
+				opacity:0.9;
+			}

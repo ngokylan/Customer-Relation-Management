@@ -1,0 +1,114 @@
+<?php
+
+function sendmail($to)
+{
+		//--------------using php smtp mailer----------------
+		
+	$mail = new PHPMailer(true); // the true param means it will throw exceptions on errors, which we need to catch
+
+	$mail->IsSMTP(); // telling the class to use SMTP	
+		
+	try {
+
+	$mail->Host       = "localhost"; // SMTP server
+	
+	$mail->SMTPDebug  = 2;                     // enables SMTP debug information (for testing)
+	
+	$mail->SMTPAuth   = true;                  // enable SMTP authentication
+	
+	$mail->Host       = "smtp.gmail.com";// sets the SMTP server
+	
+	$mail->Port       = 587;                    // set the SMTP port for the GMAIL server
+	
+	$mail->Username   = "ngokylan@gmail.com"; // SMTP account username
+	
+	$mail->Password   = "";        // SMTP account password
+	
+	$mail->AddReplyTo($to, 'First Last');
+	
+	$mail->AddAddress('whoto@otherdomain.com', 'John Doe');
+	
+	$mail->SetFrom('name@yourdomain.com', 'First Last');
+	
+	$mail->AddReplyTo('name@yourdomain.com', 'First Last');
+	
+	$mail->Subject = 'PHPMailer Test Subject via mail(), advanced';
+	
+	$mail->AltBody = 'To view the message, please use an HTML compatible email viewer!'; // optional - MsgHTML will create an alternate automatically
+	
+	$mail->MsgHTML($message);
+	
+	$mail->AddAttachment('admin/images/milestone_logo.jpg');      // attachment
+	
+	$mail->AddAttachment('admin/images/milestone_logo.jpg'); // attachment
+	
+	$mail->Send();
+	
+	echo "Message Sent OK<p></p>\n";
+	
+	} catch (phpmailerException $e) {
+	
+	echo $e->errorMessage(); //Pretty error messages from PHPMailer
+	} catch (Exception $e) {
+	
+	echo $e->getMessage(); //Boring error messages from anything else!
+	
+	}
+}
+
+
+function sendSMTPmail($to)
+{
+	$mail = new PHPMailer(true); // the true param means it will throw exceptions on errors, which we need to catch
+	
+	$mail->IsSMTP(); // telling the class to use SMTP
+	
+	try {
+	
+	$mail->Host       = "mail.yourdomain.com"; // SMTP server
+
+	$mail->SMTPDebug  = 2;                     // enables SMTP debug information (for testing)
+	
+	$mail->SMTPAuth   = true;                  // enable SMTP authentication
+	
+	$mail->Host       = "mail.yourdomain.com"; // sets the SMTP server
+
+	$mail->Port       = 26;                    // set the SMTP port for the GMAIL server
+	
+	$mail->Username   = "yourname@yourdomain"; // SMTP account username
+	
+	$mail->Password   = "yourpassword";        // SMTP account password
+
+	$mail->AddReplyTo($to, 'First Last');
+
+	$mail->AddAddress('whoto@otherdomain.com', 'John Doe');
+
+	$mail->SetFrom('name@yourdomain.com', 'First Last');
+
+	$mail->AddReplyTo('name@yourdomain.com', 'First Last');
+
+	$mail->Subject = 'PHPMailer Test Subject via mail(), advanced';
+	
+	$mail->AltBody = 'To view the message, please use an HTML compatible email viewer!'; // optional - MsgHTML will create an alternate automatically
+
+	$mail->MsgHTML(file_get_contents('contents.html'));
+
+	$mail->AddAttachment('admin/images/milestone_logo.jpg');      // attachment
+
+	$mail->AddAttachment('admin/images/milestone_logo.jpg'); // attachment
+
+	$mail->Send();
+
+	echo "Message Sent OK<p></p>\n";
+
+	} catch (phpmailerException $e) {
+
+	echo $e->errorMessage(); //Pretty error messages from PHPMailer
+	
+	} catch (Exception $e) {
+
+	echo $e->getMessage(); //Boring error messages from anything else!
+
+	}
+}
+?>
